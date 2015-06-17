@@ -25,7 +25,8 @@ $x = new FusionChart($args);
 <strong>Argument Criteria</strong>
 <br/>
 The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
-<p align="center">```php
+<p align="center">
+```php
 $args = array(
   'chart_attributes' => array(),
   'dataset' => array(),
