@@ -11,11 +11,13 @@ AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/dem
 
 The FusionChart class accepts an array as the argument for the constructor. The array should contain the following formatted information:
 
+<center>
 $args = array(
   'chart_attributes' => array(),
   'dataset' => array(),
   'categories' => array()
 );
+</center>
 
 'chart_attributes' should be an associative array whose key holds the chart attribute name and value is the attribute value. Example: 
   'chart_attributes' => array('caption' => 'First Chart!', 'xasixname' => 'Date');
