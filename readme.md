@@ -3,7 +3,7 @@ PHP class for FusionCharts that can:
   <li> Be assigned FusionChart attributes the PHP way</li>
   <li> No need to manage or manually concanetenate a JSON string for creating a graph</li>
   <li> Can echo'd out into the correct FusionChart JSON string</li>
-  <li> Can be used for parsing by a Javascript file after being printed or used to PHP display</li>
+  <li> Can be used for parsing by a Javascript file such as (HTTP POST request) after being printed or used to PHP display</li>
 </ul>
 
 The class was tested for line charts mainly and has not been tested for other types of charts (thought I expect them to operate similarily).
