@@ -6,7 +6,7 @@ PHP class for FusionCharts that can:
   <li> Can be used for parsing by a Javascript file such as (HTTP POST request) after being printed or used to PHP display</li>
 </ul>
 
-The class was tested for line charts mainly and has not been tested for other types of charts (thought I expect them to operate similarily).
+The class was tested for line charts mainly and has not been tested for other types of charts (though I expect them to operate similarily).
 
 This class follows the standards and formats listed at: http://docs.fusioncharts.com/charts/contents/ChartSS/MSLine.html<br/>
 I did not create FusionCharts, you can view it at: http://www.fusioncharts.com/
