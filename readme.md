@@ -46,7 +46,7 @@ Example:<br/>
 <strong>'categories'</strong> should be an array of all the categories you want. The number of categories should normally be equal to the maximum number of values you want to be graphed (so if your dataset 'seriesb' has 5 values and 5 is the largest dataset, than categories should theoretically be 5)
 <p align="center">
 Example:
-  'categories' => array('2014-05-03', '2014-05-04', '2014-05-05', '2014-05-06', 2014-05-07');
+  `'categories' => array('2014-05-03', '2014-05-04', '2014-05-05', '2014-05-06', 2014-05-07');`
   </p>
   
 <strong>Printing the Class into the FusionChart JSON string</strong>
