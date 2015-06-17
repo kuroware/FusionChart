@@ -45,8 +45,19 @@ Example:<br/>
 <strong>'categories'</strong> should be an array of all the categories you want. The number of categories should normally be equal to the maximum number of values you want to be graphed (so if your dataset 'seriesb' has 5 values and 5 is the largest dataset, than categories should theoretically be 5)
 <p align="center">
 Example:
-  'cateogories' => array('2014-05-03', '2014-05-04', '2014-05-05', '2014-05-06', 2014-05-07');
+  'categories' => array('2014-05-03', '2014-05-04', '2014-05-05', '2014-05-06', 2014-05-07');
   </p>
+  
+<strong>Printing the Class into the FusionChart JSON string</strong>
+To print the object into the formatted FusionChart JSON string, just use: <br/>
+echo json_encode($obj, JSON_PRETTY_PRINT);
+<br/>
+You *may* also have to set your header information to: (for some XMLHTTPRequests):
+`"Content-Type: application/json"`
+
+<h2>Extra Options</h2>
+The class constructor also accepts two other (optional) options which are unique_series and unique_categories. This to make adding in data easier, especially if your `SELECT` query on `MySQL` does not have a unqiue column. If these values are set to true, than the class will not add repeat series or categories, and will simply ignore them. 
+
 
 
 
