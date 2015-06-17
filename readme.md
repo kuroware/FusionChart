@@ -51,7 +51,7 @@ Example:
   
 <strong>Printing the Class into the FusionChart JSON string</strong>
 To print the object into the formatted FusionChart JSON string, just use: <br/>
-echo json_encode($obj, JSON_PRETTY_PRINT);
+  echo json_encode($obj, JSON_PRETTY_PRINT);
 <br/>
 You *may* also have to set your header information to: (for some XMLHTTPRequests):<br/>
 `"Content-Type: application/json"`
