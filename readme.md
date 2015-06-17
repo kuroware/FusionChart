@@ -1,6 +1,10 @@
-PHP class for FusionChart that can be assigned chart attributes the PHP way instead of manually concantenating
-or passing in a long JSON string of your chart attriubtes. The FusionChart object can then easily be printed out with the
-correct JSON format for FusionChart with brackets and all the correct delimiters.
+PHP class for FusionCharts that can:
+<ul>
+  <li> Be assigned FusionChart attributes the PHP way</li>
+  <li> No need to manage or manually concanetenate a JSON string for creating a graph</li>
+  <li> Can `echo json_encode($obj, JSON_PRETTY_PRINT)` into the correct FusionChart JSON string</li>
+  <li> Can be used for parsing by a Javascript file after being printed or used to PHP display</li>
+</ul>
 
 The class was tested for line charts mainly and has not been tested for other types of charts (thought I expect them to operate similarily). 
 
@@ -8,6 +12,9 @@ I do not create FusionCharts, you can view it at: http://www.fusioncharts.com/
 AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/demos/ex1
 
 <strong>How to Use</strong>
+
+First require the file `FusionChart.php`: require_once('FusionChart.php');<br/>
+This will give the current PHP script access to the class
 
 The FusionChart class accepts an array as the argument for the constructor. The array should contain the following formatted information:
 
