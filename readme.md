@@ -9,6 +9,7 @@ PHP class for FusionCharts that can:
 The class was tested for line charts mainly and has not been tested for other types of charts (thought I expect them to operate similarily).
 
 I did not create FusionCharts, you can view it at: http://www.fusioncharts.com/
+<br/>
 AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/demos/ex1
 
 <h2>How to Use</h2>
