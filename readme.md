@@ -15,12 +15,12 @@ AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/dem
 <h2>How to Use</h2>
 
 <strong>First require the file</strong> `FusionChart.php`: <br/>
-require_once('FusionChart.php');<br/>
+`require_once('FusionChart.php');`<br/>
 This will give the current PHP script access to the class
 
 <strong>Create the FusionChart object:</strong>
 <br/>
-$x = new FusionChart($args);
+`$x = new FusionChart($args);`
 <br/>Follow the argument criteria to create the object correctly
 
 <strong>Argument Criteria</strong>
