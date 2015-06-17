@@ -13,20 +13,22 @@ AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/dem
 
 <h2>How to Use</h2>
 
-First require the file `FusionChart.php`: require_once('FusionChart.php');<br/>
-This will give the current PHP script access to the class
+<strong>First require the file</strong> `FusionChart.php`: <br/>
+require_once('FusionChart.php'); //This will give the current PHP script access to the class
 
 <strong>Create the FusionChart object:</strong>
 <br/>
-$x = new FusionChart($args);
-The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
+$x = new FusionChart($args); //Follow the argument criteria to create the object correctly
 
+<strong>Argument Criteria</strong>
+The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
+<p align="center">
 $args = array(
   'chart_attributes' => array(),
   'dataset' => array(),
   'categories' => array()
 );
-
+</p>
 <strong>'chart_attributes'</strong> should be an associative array whose key holds the chart attribute name and value is the attribute value. 
 <p align="center">
 Example: <br/>
