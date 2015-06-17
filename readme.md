@@ -25,17 +25,18 @@ $x = new FusionChart($args);
 <strong>Argument Criteria</strong>
 <br/>
 The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
-<p align="center">
-$args = array(<br/>
-  'chart_attributes' => array(),<br/>
-  'dataset' => array(),<br/>
-  'categories' => array()<br/>
+<p align="center">```php
+$args = array(
+  'chart_attributes' => array(),
+  'dataset' => array(),
+  'categories' => array()
 );
+```
 </p>
 <strong>'chart_attributes'</strong> should be an associative array whose key holds the chart attribute name and value is the attribute value. 
 <p align="center">
 Example: <br/>
-  'chart_attributes' => array(<br/>'caption' => 'First Chart!',<<br/> 'xasixname' => 'Date');
+  'chart_attributes' => array('caption' => 'First Chart!', 'xasixname' => 'Date');
   </p>
 
 <strong>'dataset'</strong> should be an associative array that holds the series name as the key and for the value, an array that holds all the data for that series. Currently, the class checks for uniqueness of series (if you set unique_series to true), but this is a bit redundant because array keys must be unique anyways. Will be removed in the future:<p align="center">
