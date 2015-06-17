@@ -14,13 +14,16 @@ AngularJS FusionCharts: http://fusioncharts.github.io/angular-fusioncharts/#/dem
 <h2>How to Use</h2>
 
 <strong>First require the file</strong> `FusionChart.php`: <br/>
-require_once('FusionChart.php'); //This will give the current PHP script access to the class
+require_once('FusionChart.php');<br/>
+This will give the current PHP script access to the class
 
 <strong>Create the FusionChart object:</strong>
 <br/>
-$x = new FusionChart($args); //Follow the argument criteria to create the object correctly
+$x = new FusionChart($args);
+<br/>Follow the argument criteria to create the object correctly
 
 <strong>Argument Criteria</strong>
+<br/>
 The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
 <p align="center">
 $args = array(
