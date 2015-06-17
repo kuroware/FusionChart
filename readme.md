@@ -21,9 +21,9 @@ $args = array(
 Example: <br/>
   'chart_attributes' => array('caption' => 'First Chart!', 'xasixname' => 'Date');
 
-<strong>'dataset'</strong> should be an associative array that holds the series name as the key and for the value, an array that holds all the data for that series. Currently, the class checks for uniqueness of series (if you set unique_series to true), but this is a bit redundant because array keys must be unique anyways. Will be removed in the future:
+<strong>'dataset'</strong> should be an associative array that holds the series name as the key and for the value, an array that holds all the data for that series. Currently, the class checks for uniqueness of series (if you set unique_series to true), but this is a bit redundant because array keys must be unique anyways. Will be removed in the future:<p align="center">
 Example:<br/>
-   'dataset' => array('seriesa' => array( 1, 2, 3, 4, 5), 'seriesb' => (15, 23, 44, 45, 43));
+   'dataset' => array('seriesa' => array( 1, 2, 3, 4, 5), 'seriesb' => (15, 23, 44, 45, 43));</p>
 
 <strong>'categories'</strong> should be an array of all the categories you want. The number of categories should normally be equal to the maximum number of values you want to be graphed (so if your dataset 'seriesb' has 5 values and 5 is the largest dataset, than categories should theoretically be 5)
 Example:
