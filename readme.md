@@ -52,7 +52,7 @@ Example:
 To print the object into the formatted FusionChart JSON string, just use: <br/>
 echo json_encode($obj, JSON_PRETTY_PRINT);
 <br/>
-You *may* also have to set your header information to: (for some XMLHTTPRequests):
+You *may* also have to set your header information to: (for some XMLHTTPRequests):<br/>
 `"Content-Type: application/json"`
 
 <h2>Extra Options</h2>
