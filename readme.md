@@ -26,13 +26,11 @@ $x = new FusionChart($args);
 <br/>
 The FusionChart class accepts an array as the argument for the `constructor`. The array should contain the following formatted information:
 <p align="center">
-```php
 $args = array(
   'chart_attributes' => array(),
   'dataset' => array(),
   'categories' => array()
 );
-```
 </p>
 <strong>'chart_attributes'</strong> should be an associative array whose key holds the chart attribute name and value is the attribute value. 
 <p align="center">
@@ -42,7 +40,7 @@ Example: <br/>
 
 <strong>'dataset'</strong> should be an associative array that holds the series name as the key and for the value, an array that holds all the data for that series. Currently, the class checks for uniqueness of series (if you set unique_series to true), but this is a bit redundant because array keys must be unique anyways. Will be removed in the future:<p align="center">
 Example:<br/>
-   'dataset' => array(<br/>'seriesa' => array( 1, 2, 3, 4, 5), <br/>'seriesb' => (15, 23, 44, 45, 43));</p>
+   'dataset' => array('seriesa' => array( 1, 2, 3, 4, 5), 'seriesb' => (15, 23, 44, 45, 43));</p>
 
 <strong>'categories'</strong> should be an array of all the categories you want. The number of categories should normally be equal to the maximum number of values you want to be graphed (so if your dataset 'seriesb' has 5 values and 5 is the largest dataset, than categories should theoretically be 5)
 <p align="center">
