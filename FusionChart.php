@@ -7,8 +7,8 @@ class FusionChart {
 	private $data, $series, $unique_series, $unique_categories, $user_categories, $chart_attributes; //The private options that we don't need to print out
 
 	public static $defaults = array(
-		'user_categories' => array(),
-		'data' => array(), //Should be an associative array of the series and it's related data
+		'categories' => array(),
+		'dataset' => array(), //Should be an associative array of the series and it's related data
 		'unique_series' => true,
 		'unique_categories' => true,
 		'chart_attributes' => array()
@@ -29,8 +29,8 @@ class FusionChart {
 		$args = array_merge($defaults, $args);
 
 		//Construct the object properities
-		$this->user_categories = (is_array($args['user_categories'])) ? $args['user_categories'] : array();
-		$this->data = (is_array($args['data'])) ? $args['data'] : array();
+		$this->user_categories = (is_array($args['categories'])) ? $args['categories'] : array();
+		$this->data = (is_array($args['dataset'])) ? $args['dataset'] : array();
 		$this->unique_series = (is_bool($args['unique_series'])) ? $args['unique_series'] : false;
 		$this->unique_categories = (is_bool($args['unique_categories'])) ? $args['unique_categories'] : false;
 		$this->chart_attributes = (is_array($args['chart_attributes'])) ? $args['chart_options'] : array();
